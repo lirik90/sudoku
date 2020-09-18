@@ -1,0 +1,51 @@
+$bg-color: black;
+$color: #999;
+
+body {
+    color: $color;
+    background: $bg-color;
+}
+
+.game > table {
+    margin: 0 auto;
+    border: 3px solid #333;
+    border-radius: 8px;
+    border-spacing: 0;
+}
+
+.game td {
+    border: 1px solid #333;
+    font-weight: bold;
+    font-size: larger;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    user-select: none;
+}
+
+.game .td-l {
+    border-left-width: 3px;
+}
+.game .td-t {
+    border-top-width: 3px;
+}
+.game tr:first-child td {
+    border-top-width: 0px;
+}
+.game tr:last-child td {
+    border-bottom-width: 0px;
+}
+.game tr td:first-child {
+    border-left-width: 0px;
+}
+.game tr td:last-child {
+    border-right-width: 0px;
+}
+
+.game .mouse {
+    background-color: rgb(4, 4, 66);
+}
+
+.game .mouse-dep {
+    background-color: rgb(3, 3, 49);
+}
