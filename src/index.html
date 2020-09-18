@@ -1,0 +1,53 @@
+<doctype html>
+<html>
+<head>
+    <title>Sudoku</title>
+    <meta type="charset" value="utf-8">
+<style>
+#game {
+  columns: 9;
+}
+
+#game > button {
+  background-color: #eee;
+  border: 1px solid #333;
+}
+</style>
+</head>
+<body>
+    <div id="game"></div>
+<script>
+
+class Sudoku
+{
+    constructor(box_id = "game")
+    {
+        this.box = document.getElementById(box_id);
+        
+        this.createField();
+    }
+    
+    createField(size = 9)
+    {
+        for (let i = 0; i < size; ++i)
+        {
+            for (let j = 0; j < size; ++j)
+            {
+                this.createBtn();
+            }
+        }
+    }
+    
+    createBtn()
+    {
+        let btn = document.createElement('button');
+        btn.innerText = 'x';
+        this.box.appendChild(btn);
+        return btn;
+    }
+}
+
+new Sudoku();
+</script>
+</body>
+</html>
