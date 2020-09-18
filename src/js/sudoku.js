@@ -62,7 +62,7 @@ export default class Sudoku
         {
             const lineData = [];
             for (let column = 0; column < size; ++column)
-                lineData.push({ value: 0 });
+                lineData.push({ value: 0, isHidden: Math.random() > 0.5 });
             gameData.push(lineData);
         }
 
