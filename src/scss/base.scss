@@ -1,5 +1,7 @@
-$bg-color: black;
-$color: #999;
+/* Основной цвет 282c30 */ 
+
+$bg-color: #191B1B;
+$color: #968F85;
 
 body {
     color: $color;
@@ -7,27 +9,33 @@ body {
 }
 
 .game > table {
+    color: #798883;
     margin: 0 auto;
-    border: 3px solid #333;
+    padding: 0;
+    background-color: #2A2926;
+    border: 2px solid #968E81;
     border-radius: 8px;
     border-spacing: 0;
 }
 
 .game td {
-    border: 1px solid #333;
+    border: 1px solid #49443C;
     font-weight: bold;
     font-size: larger;
     width: 50px;
     height: 50px;
     text-align: center;
     user-select: none;
+    padding: 0;
 }
 
 .game .td-l {
-    border-left-width: 3px;
+    border-left-width: 2px;
+    border-left-color: #968E81;
 }
 .game .td-t {
-    border-top-width: 3px;
+    border-top-width: 2px;
+    border-top-color: #968E81;
 }
 .game tr:first-child td {
     border-top-width: 0px;
@@ -43,9 +51,33 @@ body {
 }
 
 .game .mouse {
-    background-color: rgb(4, 4, 66);
+    background-color: #1B1B1E;
 }
 
 .game .mouse-dep {
-    background-color: rgb(3, 3, 49);
+    background-color: #2C2C34;
+}
+
+.game .fixed {
+    color: #968F85;
+}
+
+.game .current-field {
+    background-color: #040315;
+}
+
+.game .help, .game .help td {
+    border: none;
+}
+
+.game .help {
+    width: 100%;
+    height: 100%;
+}
+
+.game .help td {
+    width: auto;
+    height: auto;
+    font-weight: normal;
+    font-size: xx-small;
 }

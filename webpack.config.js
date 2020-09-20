@@ -28,6 +28,8 @@ module.exports = {
         port: 8081
     },
 
+    devtool: 'inline-source-map',
+
     plugins: [
         new HtmlWebpackPlugin({
             favicon: './assets/favicon.ico',
